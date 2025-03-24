@@ -6,7 +6,7 @@ function App() {
     <main className="m-auto flex flex-col items-center  gap-8 p-2 relative">
       <Router>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/AlquimiaSmoke" element={<HomePage />} />
           <Route path="/pizzas" element={<PizzasPage />} />
           <Route path="/hamburguesas" element={<HamburgersPage />} />
           <Route path="/producto/:name" element={<ProductDescriptionPage />} />
