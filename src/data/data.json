@@ -1,0 +1,224 @@
+[
+  {
+    "id": 1,
+    "name": "Cheeseburger",
+    "price": 5.99,
+    "ingredients": [
+      "Carne de res",
+      "Queso cheddar",
+      "Lechuga",
+      "Tomate",
+      "Pan de hamburguesa",
+      "Salsa especial"
+    ],
+    "image": "../../public/hamburgers_images/Cheeseburger.png",
+    "description": "Clásica hamburguesa con carne de res jugosa y queso derretido en un pan suave.",
+    "category": "Hamburguesas",
+    "quantity": 0
+  },
+  {
+    "id": 2,
+    "name": "BBQ Burger",
+    "price": 6.99,
+    "ingredients": [
+      "Carne de res",
+      "Salsa barbacoa",
+      "Cebolla crujiente",
+      "Queso cheddar",
+      "Pan brioche"
+    ],
+    "image": "../../public/hamburgers_images/BBQ_Burger.png",
+    "description": "Hamburguesa con salsa barbacoa ahumada, cebolla crujiente y queso cheddar.",
+    "category": "Hamburguesas",
+    "quantity": 0
+  },
+  {
+    "id": 3,
+    "name": "Double Burger",
+    "price": 7.99,
+    "ingredients": [
+      "Doble carne de res",
+      "Doble queso cheddar",
+      "Lechuga",
+      "Tomate",
+      "Pepinillos",
+      "Salsa especial",
+      "Pan de hamburguesa"
+    ],
+    "image": "../../public/hamburgers_images/Double_burguer.png",
+    "description": "Doble carne de res con queso derretido, lechuga, tomate y salsa especial.",
+    "category": "Hamburguesas",
+    "quantity": 0
+  },
+  {
+    "id": 4,
+    "name": "Spicy Burger",
+    "price": 6.49,
+    "ingredients": [
+      "Carne de res",
+      "Jalapeños",
+      "Queso pepper jack",
+      "Salsa picante",
+      "Lechuga",
+      "Pan de hamburguesa"
+    ],
+    "image": "../../public/hamburgers_images/Spicy_Burger.png",
+    "description": "Hamburguesa con un toque picante, jalapeños, salsa especial y queso pepper jack.",
+    "category": "Hamburguesas",
+    "quantity": 0
+  },
+  {
+    "id": 5,
+    "name": "Mushroom Swiss",
+    "price": 6.99,
+    "ingredients": [
+      "Carne de res",
+      "Champiñones salteados",
+      "Queso suizo",
+      "Cebolla caramelizada",
+      "Pan de hamburguesa"
+    ],
+    "image": "../../public/hamburgers_images/Mushroom_Swiss.png",
+    "description": "Hamburguesa con champiñones salteados y queso suizo derretido.",
+    "category": "Hamburguesas",
+    "quantity": 0
+  },
+  {
+    "id": 6,
+    "name": "Avocado Burger",
+    "price": 7.99,
+    "ingredients": [
+      "Carne de res",
+      "Aguacate",
+      "Queso suizo",
+      "Lechuga",
+      "Mayonesa",
+      "Pan brioche"
+    ],
+    "image": "../../public/hamburgers_images/Avocado_Burger.png",
+    "description": "Hamburguesa con cremoso aguacate, queso suizo y salsa especial.",
+    "category": "Hamburguesas",
+    "quantity": 0
+  },
+  {
+    "id": 7,
+    "name": "Chicken Burger",
+    "price": 6.49,
+    "ingredients": [
+      "Pechuga de pollo a la parrilla",
+      "Lechuga",
+      "Tomate",
+      "Mayonesa",
+      "Pan de hamburguesa"
+    ],
+    "image": "../../public/hamburgers_images/Chicken_Burger.png",
+    "description": "Hamburguesa de pollo a la parrilla con lechuga, tomate y mayonesa.",
+    "category": "Hamburguesas",
+    "quantity": 0
+  },
+  {
+    "id": 8,
+    "name": "Pizza Margarita",
+    "price": 8.99,
+    "ingredients": [
+      "Salsa de tomate",
+      "Queso mozzarella",
+      "Albahaca fresca",
+      "Aceite de oliva"
+    ],
+    "image": "../../public/pizzas-images/Pizza_Margarita.jpg",
+    "description": "Clásica pizza con salsa de tomate, queso mozzarella y albahaca fresca.",
+    "category": "Pizzas",
+    "quantity": 0
+  },
+  {
+    "id": 9,
+    "name": "Pizza BBQ",
+    "price": 9.99,
+    "ingredients": [
+      "Salsa barbacoa",
+      "Pollo a la parrilla",
+      "Cebolla morada",
+      "Queso mozzarella",
+      "Cilantro"
+    ],
+    "image": "../../public/pizzas-images/Pizza_BBQ.jpg",
+    "description": "Pizza con salsa barbacoa, pollo a la parrilla, cebolla morada y queso mozzarella.",
+    "category": "Pizzas",
+    "quantity": 0
+  },
+  {
+    "id": 10,
+    "name": "Pizza Hawaiana",
+    "price": 10.99,
+    "ingredients": ["Salsa de tomate", "Queso mozzarella", "Jamón", "Piña"],
+    "image": "../../public/pizzas-images/Pizza_Hawaiana.jpg",
+    "description": "Pizza con salsa de tomate, queso mozzarella, jamón y piña.",
+    "category": "Pizzas",
+    "quantity": 0
+  },
+  {
+    "id": 11,
+    "name": "Pizza Picante",
+    "price": 9.49,
+    "ingredients": [
+      "Salsa de tomate",
+      "Queso mozzarella",
+      "Pepperoni",
+      "Jalapeños",
+      "Salsa picante"
+    ],
+    "image": "../../public/pizzas-images/Pizza_Picante.jpg",
+    "description": "Pizza con un toque picante, pepperoni, jalapeños y salsa picante.",
+    "category": "Pizzas",
+    "quantity" : 0
+  },
+  {
+    "id": 12,
+    "name": "Pizza de Champiñones",
+    "price": 9.99,
+    "ingredients": [
+      "Salsa de tomate",
+      "Queso mozzarella",
+      "Champiñones",
+      "Aceitunas negras",
+      "Orégano"
+    ],
+    "image": "../../public/pizzas-images/Pizza_Champiñones.jpg",
+    "description": "Pizza con salsa de tomate, queso mozzarella, champiñones y aceitunas negras.",
+    "category": "Pizzas",
+    "quantity": 0
+  },
+  {
+    "id": 13,
+    "name": "Pizza de Aguacate",
+    "price": 11.99,
+    "ingredients": [
+      "Salsa de tomate",
+      "Queso mozzarella",
+      "Aguacate",
+      "Tomate cherry",
+      "Rúcula"
+    ],
+    "image": "../../public/pizzas-images/Pizza_Aguacate.jpg",
+    "description": "Pizza con salsa de tomate, queso mozzarella, aguacate y tomate cherry.",
+    "category": "Pizzas",
+    "quantity" : 0
+  },
+  {
+    "id": 14,
+    "name": "Pizza de Pollo",
+    "price": 9.49,
+    "ingredients": [
+      "Salsa de tomate",
+      "Queso mozzarella",
+      "Pollo a la parrilla",
+      "Cebolla caramelizada",
+      "Pimiento rojo"
+    ],
+    "image": "../../public/pizzas-images/Pizza_Pollo.jpg",
+    "description": "Pizza con salsa de tomate, queso mozzarella, pollo a la parrilla y cebolla caramelizada.",
+    "category": "Pizzas",
+    "quantity": 0
+  }
+]
