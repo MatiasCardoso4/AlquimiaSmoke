@@ -1,18 +1,18 @@
 import { CategoryCard } from "../Category/CategoryCard";
-
+import {hamburgerCategoryImage,pizzaCategoryImage} from '../../../public/images/index'
 export const CategoryCardContainer = () => {
 
   return (
     <div className="w-full flex  md:flex-nowrap justify-center gap-4 md:gap-12 text-center   p-4">
       <CategoryCard
         label="Pizzas"
-        image="../../../public/pizza-option.png"
-        path="/pizzas"
+        image={pizzaCategoryImage}
+        path="/AlquimiaSmoke/Pizzas"
       />
       <CategoryCard
         label="Hamburguesas"
-        image="../../../public/hamburguesa-option.png"
-        path="/hamburguesas"
+        image={hamburgerCategoryImage}
+        path="/AlquimiaSmoke/Hamburguesas"
       />
     </div>
   );

@@ -1,3 +1,5 @@
+import {lupa} from '../../../public/images/index'
+
 interface Params {
   displayName: boolean;
   onClick: () => void;
@@ -18,7 +20,7 @@ export const OrderList = ({ displayName,onClick }: Params) => {
         <span className="w-full flex justify-center">
           <img
             className="w-[300px]"
-            src="../../../public/lupa.png"
+            src={lupa}
             alt="imagen lupa"
           />
         </span>

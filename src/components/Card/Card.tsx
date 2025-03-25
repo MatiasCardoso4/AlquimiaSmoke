@@ -6,8 +6,6 @@ interface Params {
 }
 
 export const Card = ({ product,onClick }: Params) => {
-
-
   return (
 
     <div
@@ -29,8 +27,5 @@ export const Card = ({ product,onClick }: Params) => {
         alt={product.name}
       />
     </div>
-    
-
-    
   );
 };
