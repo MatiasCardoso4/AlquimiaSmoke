@@ -9,7 +9,6 @@ function App() {
           <Route path="/AlquimiaSmoke" element={<HomePage />} />
           <Route path="/AlquimiaSmoke/Pizzas" element={<PizzasPage />} />
           <Route path="/AlquimiaSmoke/Hamburguesas" element={<HamburgersPage />} />
-          {/* <Route path="/AlquimiaSmoke/Producto/:name" element={<ProductDescriptionPage />} /> */}
         </Routes>
       </Router>
     </main>

@@ -11,7 +11,7 @@
       "Pan de hamburguesa",
       "Salsa especial"
     ],
-    "image": "./products/hamburgers_images/Cheeseburger.png",
+    "image": "./images/products/hamburgers_images/Cheeseburger.png",
     "description": "Clásica hamburguesa con carne de res jugosa y queso derretido en un pan suave.",
     "category": "Hamburguesas",
     "quantity": 0
@@ -27,7 +27,7 @@
       "Queso cheddar",
       "Pan brioche"
     ],
-    "image": "./products/hamburgers_images/BBQ_Burger.png",
+    "image": "./images/products/hamburgers_images/BBQ_Burger.png",
     "description": "Hamburguesa con salsa barbacoa ahumada, cebolla crujiente y queso cheddar.",
     "category": "Hamburguesas",
     "quantity": 0
@@ -45,7 +45,7 @@
       "Salsa especial",
       "Pan de hamburguesa"
     ],
-    "image": "./products/hamburgers_images/Double_burguer.png",
+    "image": "./images/products/hamburgers_images/Double_burguer.png",
     "description": "Doble carne de res con queso derretido, lechuga, tomate y salsa especial.",
     "category": "Hamburguesas",
     "quantity": 0
@@ -62,7 +62,7 @@
       "Lechuga",
       "Pan de hamburguesa"
     ],
-    "image": "./products/hamburgers_images/Spicy_Burger.png",
+    "image": "./images/products/hamburgers_images/Spicy_Burger.png",
     "description": "Hamburguesa con un toque picante, jalapeños, salsa especial y queso pepper jack.",
     "category": "Hamburguesas",
     "quantity": 0
@@ -78,7 +78,7 @@
       "Cebolla caramelizada",
       "Pan de hamburguesa"
     ],
-    "image": "./products/hamburgers_images/Mushroom_Swiss.png",
+    "image": "./images/products/hamburgers_images/Mushroom_Swiss.png",
     "description": "Hamburguesa con champiñones salteados y queso suizo derretido.",
     "category": "Hamburguesas",
     "quantity": 0
@@ -95,7 +95,7 @@
       "Mayonesa",
       "Pan brioche"
     ],
-    "image": "./products/hamburgers_images/Avocado_Burger.png",
+    "image": "./images/products/hamburgers_images/Avocado_Burger.png",
     "description": "Hamburguesa con cremoso aguacate, queso suizo y salsa especial.",
     "category": "Hamburguesas",
     "quantity": 0
@@ -111,7 +111,7 @@
       "Mayonesa",
       "Pan de hamburguesa"
     ],
-    "image": "./products/hamburgers_images/Chicken_Burger.png",
+    "image": "./images/products/hamburgers_images/Chicken_Burger.png",
     "description": "Hamburguesa de pollo a la parrilla con lechuga, tomate y mayonesa.",
     "category": "Hamburguesas",
     "quantity": 0
@@ -126,7 +126,7 @@
       "Albahaca fresca",
       "Aceite de oliva"
     ],
-    "image": "./products/pizzas-images/Pizza_Margarita.jpg",
+    "image": "./images/products/pizzas-images/Pizza_Margarita.jpg",
     "description": "Clásica pizza con salsa de tomate, queso mozzarella y albahaca fresca.",
     "category": "Pizzas",
     "quantity": 0
@@ -142,7 +142,7 @@
       "Queso mozzarella",
       "Cilantro"
     ],
-    "image": "./products/pizzas-images/Pizza_BBQ.jpg",
+    "image": "./images/products/pizzas-images/Pizza_BBQ.jpg",
     "description": "Pizza con salsa barbacoa, pollo a la parrilla, cebolla morada y queso mozzarella.",
     "category": "Pizzas",
     "quantity": 0
@@ -152,7 +152,7 @@
     "name": "Pizza Hawaiana",
     "price": 10.99,
     "ingredients": ["Salsa de tomate", "Queso mozzarella", "Jamón", "Piña"],
-    "image": "./products/pizzas-images/Pizza_Hawaiana.jpg",
+    "image": "./images/products/pizzas-images/Pizza_Hawaiana.jpg",
     "description": "Pizza con salsa de tomate, queso mozzarella, jamón y piña.",
     "category": "Pizzas",
     "quantity": 0
@@ -168,7 +168,7 @@
       "Jalapeños",
       "Salsa picante"
     ],
-    "image": "./products/pizzas-images/Pizza_Picante.jpg",
+    "image": "./images/products/pizzas-images/Pizza_Picante.jpg",
     "description": "Pizza con un toque picante, pepperoni, jalapeños y salsa picante.",
     "category": "Pizzas",
     "quantity" : 0
@@ -184,7 +184,7 @@
       "Aceitunas negras",
       "Orégano"
     ],
-    "image": "./products/pizzas-images/Pizza_Champiñones.jpg",
+    "image": "./images/products/pizzas-images/Pizza_Champiñones.jpg",
     "description": "Pizza con salsa de tomate, queso mozzarella, champiñones y aceitunas negras.",
     "category": "Pizzas",
     "quantity": 0
@@ -200,7 +200,7 @@
       "Tomate cherry",
       "Rúcula"
     ],
-    "image": "./products/pizzas-images/Pizza_Aguacate.jpg",
+    "image": "./images/products/pizzas-images/Pizza_Aguacate.jpg",
     "description": "Pizza con salsa de tomate, queso mozzarella, aguacate y tomate cherry.",
     "category": "Pizzas",
     "quantity" : 0
@@ -216,7 +216,7 @@
       "Cebolla caramelizada",
       "Pimiento rojo"
     ],
-    "image": "./products/pizzas-images/Pizza_Pollo.jpg",
+    "image": "./images/products/pizzas-images/Pizza_Pollo.jpg",
     "description": "Pizza con salsa de tomate, queso mozzarella, pollo a la parrilla y cebolla caramelizada.",
     "category": "Pizzas",
     "quantity": 0

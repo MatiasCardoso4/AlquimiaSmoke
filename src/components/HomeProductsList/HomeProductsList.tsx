@@ -1,5 +1,4 @@
 import { useDisplay, useProducts } from "../../hooks/index";
-
 import { Card } from "../Card/Card";
 import { OrderProduct } from "../OrderProduct/OrderProduct";
 
