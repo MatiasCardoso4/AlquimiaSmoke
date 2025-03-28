@@ -19,7 +19,7 @@ export const OrderProduct = ({ product, display, onClick }: Params) => {
     >
       <button
         onClick={onClick}
-        className="font-bold bg-zinc-300 h-[30px] w-[30px] rounded-full"
+        className="font-bold bg-zinc-200 h-[30px] w-[30px] rounded-full"
       >
         X
       </button>
@@ -30,9 +30,9 @@ export const OrderProduct = ({ product, display, onClick }: Params) => {
           <p>{product.name}</p>
           <span>{product.price}</span>
         </div>
-        <div className="w-full flex items-center justify-between p-2 border border-zinc-400 rounded-md">
+        <div className="w-full flex items-center justify-between p-2 border border-zinc-300 rounded-md">
           <span className="text-xl">Unidadades</span>
-          <div className="w-[100px] bg-zinc-300 flex justify-between items-center p-2 rounded-2xl ">
+          <div className="w-[100px] bg-zinc-200  flex justify-between items-center p-2 rounded-2xl ">
             <Button label="+" onClick={() => addToCart(product)}/>
             <span>{product.quantity}</span>
             <Button label="-" onClick={() => removeFromCart(product)}/>
