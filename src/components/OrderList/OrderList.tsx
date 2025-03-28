@@ -12,7 +12,7 @@ export const OrderList = ({ displayName,onClick }: Params) => {
         displayName ? "fixed" : "hidden"
       } w-[23%] h-screen right-0  top-[30%]`}
     >
-      <div className="h-auto bg-zinc-200 p-4 rounded-md">
+      <div className="h-auto bg-zinc-100 p-4 rounded-md shadow-xl">
         <div className="flex w-full justify-between ">
           <h3 className="text-zinc-800 text-xl ">Tu Pedido</h3>
           <button className="font-bold" onClick={onClick}>X</button>
