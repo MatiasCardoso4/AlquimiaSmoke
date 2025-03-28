@@ -1,4 +1,4 @@
-import {lupa} from '../../../public/images/index'
+import lupa from '../../../public/images/lupa.png'
 
 interface Params {
   displayName: boolean;

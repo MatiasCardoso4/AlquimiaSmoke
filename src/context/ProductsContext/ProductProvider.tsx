@@ -29,6 +29,7 @@ export const ProductProvider = ({ children }: Params) => {
     <ProductsContext.Provider
       value={{
         product: product,
+        ...product,
         setProduct,
         randomProducts,
       }}

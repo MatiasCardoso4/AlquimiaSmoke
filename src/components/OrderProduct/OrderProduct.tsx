@@ -15,11 +15,11 @@ export const OrderProduct = ({ product, display, onClick }: Params) => {
     <section
       className={`${
         display ? "fixed" : "hidden"
-      }  w-full h-screen lg:top-[33%] lg:left-[33%] lg:w-[33%] lg:h-[50%] rounded-md shadow-2xl  inset-0 z-50 bg-zinc-300 p-2  `}
+      }  w-full h-screen lg:top-[33%] lg:left-[33%] lg:w-[33%] lg:h-[55%] rounded-md shadow-2xl  inset-0 z-50 bg-zinc-100 p-2 `}
     >
       <button
         onClick={onClick}
-        className="font-bold bg-zinc-400 h-[30px] w-[30px] rounded-full"
+        className="font-bold bg-zinc-300 h-[30px] w-[30px] rounded-full"
       >
         X
       </button>
@@ -32,13 +32,13 @@ export const OrderProduct = ({ product, display, onClick }: Params) => {
         </div>
         <div className="w-full flex items-center justify-between p-2 border border-zinc-400 rounded-md">
           <span className="text-xl">Unidadades</span>
-          <div className="w-[100px] bg-zinc-400 flex justify-between items-center px-2 rounded-2xl ">
+          <div className="w-[100px] bg-zinc-300 flex justify-between items-center p-2 rounded-2xl ">
             <Button label="+" onClick={() => addToCart(product)}/>
             <span>{product.quantity}</span>
             <Button label="-" onClick={() => removeFromCart(product)}/>
           </div>
         </div>
-        <div className="bg-red-500 text-center  w-[300px] rounded-2xl p-2 text-zinc-50 absolute bottom-[10px] cursor-pointer">
+        <div className="bg-red-500 text-center  w-[300px] rounded-2xl p-2 text-zinc-50 absolute bottom-[20px] cursor-pointer hover:bg-red-300">
           <Button label="Agrega a mi pedido" onClick={() => addToCart(product)}/>
         </div>
       </div>

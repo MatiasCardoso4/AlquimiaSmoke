@@ -3,7 +3,7 @@ import {HomePage,PizzasPage,HamburgersPage} from './pages/index'
 
 function App() {
   return (
-    <main className="m-auto flex flex-col items-center  gap-8 p-2 relative">
+    <main className="m-auto flex flex-col items-center  gap-8  min-h-screen bg-zinc-100">
       <Router>
         <Routes>
           <Route path="/AlquimiaSmoke" element={<HomePage />} />
