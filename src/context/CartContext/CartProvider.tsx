@@ -14,17 +14,18 @@ export const CartProvider = ({ children }: Params) => {
       const existingItem = prevCart.find(item => item.id === product.id);
       
       if (existingItem) {
-        // Si el producto ya está en el carrito, incrementa su cantidad
         return prevCart.map(item =>
           item.id === product.id
             ? { ...item, quantity: item.quantity + 1 }
             : item
         );
       } else {
-        // Si es un producto nuevo, lo agregamos con cantidad 1
         return [...prevCart, { ...product, quantity: 1 }];
       }
     });
+    console.log('Product added');
+    console.log(cart);
+    
   };
 
   const removeFromCart = (product: Products) => {

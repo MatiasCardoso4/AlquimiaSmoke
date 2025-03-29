@@ -7,7 +7,7 @@ export const Button = ({ label, onClick }: Params) => {
   return (
     <button
       onClick={onClick}
-      className=" rounded-4xl  font-bold cursor-pointer "
+      className="font-bold cursor-pointer "
     >
       {label}
     </button>

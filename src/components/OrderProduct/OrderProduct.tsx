@@ -9,8 +9,8 @@ interface Params {
 }
 
 export const OrderProduct = ({ product, display, onClick }: Params) => {
-  const { addToCart,removeFromCart } = useCart();
-
+  const { addToCart, removeFromCart, cart } = useCart();
+  const productIsInCart = cart.find((p) => p.id === product.id);
   return (
     <section
       className={`${
@@ -33,13 +33,15 @@ export const OrderProduct = ({ product, display, onClick }: Params) => {
         <div className="w-full flex items-center justify-between p-2 border border-zinc-300 rounded-md">
           <span className="text-xl">Unidadades</span>
           <div className="w-[100px] bg-zinc-200  flex justify-between items-center p-2 rounded-2xl ">
-            <Button label="+" onClick={() => addToCart(product)}/>
-            <span>{product.quantity}</span>
-            <Button label="-" onClick={() => removeFromCart(product)}/>
+            <Button label="+" onClick={() => addToCart(product)} />
+            <span>{productIsInCart?.quantity || 0}</span>
+            <Button label="-" onClick={() => removeFromCart(product)} />
           </div>
         </div>
         <div className="bg-red-500 text-center  w-[300px] rounded-2xl p-2 text-zinc-50 absolute bottom-[20px] cursor-pointer hover:bg-red-300">
-          <Button label="Agrega a mi pedido" onClick={() => addToCart(product)}/>
+          <Button
+            label="Agrega a mi pedido"
+          />
         </div>
       </div>
     </section>
