@@ -18,9 +18,7 @@ export const OrderList = ({ displayName, onClick }: Params) => {
       <div className="h-auto flex flex-col gap-4 bg-zinc-800 p-4 rounded-md ">
         <div className="flex w-full justify-between ">
           <h3 className="text-zinc-50 text-xl ">Tu Pedido</h3>
-          <button className="font-bold" onClick={onClick}>
-            X
-          </button>
+         <Button label="❌" onClick={onClick}/>
         </div>
         <span className="w-full flex justify-center">
           <ul className="w-full flex flex-col  gap-4">
@@ -55,7 +53,7 @@ export const OrderList = ({ displayName, onClick }: Params) => {
                 </li>
               ))
             ) : (
-              <img src={lupa} alt="" />
+              <img src={lupa} alt="imagen de una lupa" />
             )}
           </ul>
         </span>

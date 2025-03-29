@@ -7,8 +7,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/AlquimiaSmoke/" element={<HomePage />} />
-          <Route path="/AlquimiaSmoke/Pizzas" element={<PizzasPage />} />
-          <Route path="/AlquimiaSmoke/Hamburguesas" element={<HamburgersPage />} />
+          <Route path="/AlquimiaSmoke/:Pizzas" element={<PizzasPage />} />
+          <Route path="/AlquimiaSmoke/:Hamburguesas" element={<HamburgersPage />} />
         </Routes>
       </Router>
     </main>
