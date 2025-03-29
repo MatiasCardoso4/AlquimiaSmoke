@@ -1,7 +1,7 @@
 import { createContext } from "react";
 import { Products } from "../../interface/Product.interface";
 
-export interface Cart {
+export interface Cart extends Products{
   id: number,
   name: string,
   price: number,
