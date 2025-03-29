@@ -63,7 +63,7 @@ export const OrderList = ({ displayName, onClick }: Params) => {
               return (total += p.quantity * p.price);
             },
             0
-          )}`}</span>
+          ).toFixed(2)}`}</span>
         </div>
       </div>
     </div>

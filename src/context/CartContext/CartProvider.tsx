@@ -23,9 +23,6 @@ export const CartProvider = ({ children }: Params) => {
         return [...prevCart, { ...product, quantity: 1 }];
       }
     });
-    console.log('Product added');
-    console.log(cart);
-    
   };
 
   const removeFromCart = (product: Products) => {

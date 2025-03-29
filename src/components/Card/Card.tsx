@@ -18,7 +18,7 @@ export const Card = ({ product,onClick }: Params) => {
         </h3>
         <p className="text-sm">{product.description}</p>
         <span className=" text-sm md:text-xl rounded-2xl ">
-          ${product.price}
+          ${product.price.toFixed(2)}
         </span>
       </div>
       <img

@@ -28,7 +28,7 @@ export const OrderProduct = ({ product, display, onClick }: Params) => {
         <div className="shadow-xl w-full p-4">
           <h3 className=" font-bold tracking-wider">{product.name}</h3>
           <p>{product.name}</p>
-          <span>{product.price}</span>
+          <span>{product.price.toFixed(2)}</span>
         </div>
         <div className="w-full flex items-center justify-between p-2 border border-zinc-300 rounded-md">
           <span className="text-xl">Unidadades</span>
