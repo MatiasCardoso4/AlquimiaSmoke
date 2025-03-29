@@ -6,7 +6,7 @@ function App() {
     <main className="m-auto flex flex-col items-center  gap-8  min-h-screen bg-zinc-100">
       <Router>
         <Routes>
-          <Route path="/AlquimiaSmoke" element={<HomePage />} />
+          <Route path="/AlquimiaSmoke/" element={<HomePage />} />
           <Route path="/AlquimiaSmoke/Pizzas" element={<PizzasPage />} />
           <Route path="/AlquimiaSmoke/Hamburguesas" element={<HamburgersPage />} />
         </Routes>

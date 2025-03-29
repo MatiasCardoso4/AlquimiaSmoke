@@ -32,16 +32,18 @@ export const OrderProduct = ({ product, display, onClick }: Params) => {
         </div>
         <div className="w-full flex items-center justify-between p-2 border border-zinc-300 rounded-md">
           <span className="text-xl">Unidadades</span>
-          <div className="w-[100px] bg-zinc-200  flex justify-between items-center p-2 rounded-2xl ">
-            <Button label="+" onClick={() => addToCart(product)} />
-            <span>{productIsInCart?.quantity || 0}</span>
-            <Button label="-" onClick={() => removeFromCart(product)} />
+          <div className="w-[100px] bg-zinc-200  flex justify-between items-center  rounded-2xl ">
+            <div className="w-[50px] h-[50px] text-xl flex justify-center items-center cursor-pointer" onClick={() => addToCart(product)}>
+              <Button label="+" />
+            </div>
+            <span className="font-bold">{productIsInCart?.quantity || 0}</span>
+            <div className="w-[50px] h-[50px] text-xl flex justify-center items-center cursor-pointer" onClick={() => removeFromCart(product)}>
+              <Button label="-" />
+            </div>
           </div>
         </div>
         <div className="bg-red-500 text-center  w-[300px] rounded-2xl p-2 text-zinc-50 absolute bottom-[20px] cursor-pointer hover:bg-red-300">
-          <Button
-            label="Agrega a mi pedido"
-          />
+          <Button label="Agrega a mi pedido" />
         </div>
       </div>
     </section>

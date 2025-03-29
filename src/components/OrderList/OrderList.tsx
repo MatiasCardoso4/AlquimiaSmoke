@@ -13,11 +13,11 @@ export const OrderList = ({ displayName, onClick }: Params) => {
     <div
       className={` ${
         displayName ? "absolute" : "hidden"
-      } w-[23%] h-screen right-0  top-[30%]`}
+      } w-full h-auto lg:w-[23%] lg:h-max  right-0  top-[30%] shadow-2xl`}
     >
-      <div className="h-auto flex flex-col gap-4 bg-zinc-100 p-4 rounded-md shadow-xl">
+      <div className="h-auto flex flex-col gap-4 bg-zinc-800 p-4 rounded-md ">
         <div className="flex w-full justify-between ">
-          <h3 className="text-zinc-800 text-xl ">Tu Pedido</h3>
+          <h3 className="text-zinc-50 text-xl ">Tu Pedido</h3>
           <button className="font-bold" onClick={onClick}>
             X
           </button>
@@ -28,22 +28,28 @@ export const OrderList = ({ displayName, onClick }: Params) => {
               cart.map((p) => (
                 <li
                   key={p.id}
-                  className="w-full flex flex-col items-center justify-center  border-0 border-b-2 border-zinc-800 pb-4"
+                  className="w-full flex flex-col items-center justify-center  border-0 border-b-2 border-zinc-50 pb-4"
                 >
                   <div className="flex gap-2 mb-2">
-                    <h3 className="text-xl">{p?.name} </h3>
-                    <span className="font-bold self-center text-xl">
+                    <h3 className="text-xl text-zinc-50">{p?.name} </h3>
+                    <span className="font-bold self-center text-xl text-zinc-50">
                       {" "}
                       {`x ${p.quantity}`}
                     </span>
                   </div>
                   <img src={p.image} alt={p.name} className="w-[100px]" />
                   <div className="w-full flex justify-center gap-2 items-center p-2 rounded-2xl ">
-                    <div onClick={() => addToCart(p)}  className=" bg-zinc-200 w-[50px] h-[50px] rounded-[50%] flex justify-center items-center cursor-pointer">
+                    <div
+                      onClick={() => addToCart(p)}
+                      className=" bg-zinc-200 w-[50px] h-[50px] rounded-[50%] flex justify-center items-center cursor-pointer"
+                    >
                       <Button label="+" />
                     </div>
-                    <div  onClick={() => removeFromCart(p)}  className=" bg-zinc-200 w-[50px] h-[50px] rounded-[50%] flex justify-center items-center cursor-pointer">
-                      <Button label="-"/>
+                    <div
+                      onClick={() => removeFromCart(p)}
+                      className=" bg-zinc-200 w-[50px] h-[50px] rounded-[50%] flex justify-center items-center cursor-pointer"
+                    >
+                      <Button label="-" />
                     </div>
                   </div>
                 </li>
@@ -53,6 +59,14 @@ export const OrderList = ({ displayName, onClick }: Params) => {
             )}
           </ul>
         </span>
+        <div>
+          <span className="text-zinc-50 text-2xl">{`Total: ${cart.reduce(
+            (total, p) => {
+              return (total += p.quantity * p.price);
+            },
+            0
+          )}`}</span>
+        </div>
       </div>
     </div>
   );
