@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { CartHeaderTag } from "../CartHeaderTag/CartHeaderTag";
+import { CheckMyOrder } from "../CheckMyOrder/CheckMyOrder";
 import logo from '../../../public/images/logo.png';
 
 export const Header = () => {
@@ -12,7 +12,7 @@ export const Header = () => {
           className="w-20 md:w-32 lg:w-48 "
         />
       </Link>
-      <CartHeaderTag/>
+      <CheckMyOrder/>
     </header>
   );
 };

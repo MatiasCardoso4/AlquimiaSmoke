@@ -1,6 +1,6 @@
 export * from './Button/Button'
 export * from './Card/Card'
-export * from './CartHeaderTag/CartHeaderTag'
+export * from './CheckMyOrder/CheckMyOrder'
 export * from './Category/CategoryCard'
 export * from './CategoryCardContainer/CategotyCardContainer'
 export * from './Header/Header'

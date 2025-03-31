@@ -9,7 +9,8 @@ interface Params {
 }
 
 export const OrderProduct = ({ product, display, onClick }: Params) => {
-  const { addToCart, removeFromCart, cart } = useCart();
+  const { addProductToCart, removeFromCart, cart } = useCart();
+
   const productIsInCart = cart.find((p) => p.id === product.id);
   return (
     <section
@@ -23,17 +24,17 @@ export const OrderProduct = ({ product, display, onClick }: Params) => {
       >
         X
       </button>
-      <div className="flex flex-col items-center gap-4 ">
+      <div className="flex flex-col items-center gap-4  shadow-zinc-300 shadow-2xl mt-2">
         <img className="w-[230px]" src={product.image} alt={product.name} />
-        <div className="shadow-xl w-full p-4">
+        <div className=" w-full p-4">
           <h3 className=" font-bold tracking-wider">{product.name}</h3>
           <p>{product.name}</p>
           <span>{product.price.toFixed(2)}</span>
         </div>
-        <div className="w-full flex items-center justify-between p-2 border border-zinc-300 rounded-md">
+        <div className="w-[97%] flex items-center justify-between p-2 border border-zinc-300 rounded-md absolute bottom-5">
           <span className="text-xl">Unidadades</span>
           <div className="w-[100px] bg-zinc-200  flex justify-between items-center  rounded-2xl ">
-            <div className="w-[50px] h-[50px] text-xl flex justify-center items-center cursor-pointer" onClick={() => addToCart(product)}>
+            <div className="w-[50px] h-[50px] text-xl flex justify-center items-center cursor-pointer" onClick={() => addProductToCart(product)}>
               <Button label="+" />
             </div>
             <span className="font-bold">{productIsInCart?.quantity || 0}</span>
@@ -42,9 +43,7 @@ export const OrderProduct = ({ product, display, onClick }: Params) => {
             </div>
           </div>
         </div>
-        <div className="bg-red-500 text-center  w-[300px] rounded-2xl p-2 text-zinc-50 absolute bottom-[20px] cursor-pointer hover:bg-red-300">
-          <Button label="Agrega a mi pedido" />
-        </div>
+      
       </div>
     </section>
   );

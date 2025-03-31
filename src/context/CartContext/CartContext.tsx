@@ -12,15 +12,19 @@ export interface Cart extends Products{
 interface CartContextProps {
   cart: Cart[];
   setCart: React.Dispatch<React.SetStateAction<Cart[]>>;
-  addToCart: (product: Products) => void;
+  addProductToCart: (product: Products) => void;
   removeFromCart: (product: Products) => void;
-  clearCart: () => void;
+  settingCart: () => void;
+  totalPorducts:number,
+  setTotalProducts: React.Dispatch<React.SetStateAction<number>>
 }
 
 export const CartContext = createContext<CartContextProps>({
   cart: [],
   setCart: () => {},
-  addToCart: () => {},
+  addProductToCart: () => {},
   removeFromCart: () => {},
-  clearCart: () => {},
+  settingCart: () => {},
+  totalPorducts: 0,
+  setTotalProducts: () => {}
 });

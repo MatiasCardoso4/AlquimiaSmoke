@@ -7,7 +7,7 @@ export const HomeProductsList = () => {
   const { product, randomProducts } = useProducts();
 
   return (
-    <section className="w-full  lg:w-[50%] grid py-4  gap-4 md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))]   lg:grid-cols-2  md:py-6 ">
+    <section className="w-full  grid p-2  gap-4 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] lg:grid-cols-[repeat(auto-fit,minmax(400px,1fr))]  lg:w-[70%] lg:pb-8 ">
       {randomProducts.map((product) => (
         <Card
           key={product.id}
@@ -22,6 +22,7 @@ export const HomeProductsList = () => {
           onClick={toggleDisplay}
         />
       )}
+
     </section>
   );
 };
