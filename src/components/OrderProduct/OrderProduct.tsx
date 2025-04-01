@@ -16,7 +16,7 @@ export const OrderProduct = ({ product, display, onClick }: Params) => {
     <section
       className={`${
         display ? "fixed" : "hidden"
-      }  w-full h-screen lg:top-[33%] lg:left-[33%] lg:w-[33%] lg:h-[55%] rounded-md shadow-2xl  inset-0 z-50 bg-zinc-100 p-2 `}
+      }  w-full h-screen lg:top-[33%] lg:left-[33%] lg:w-[33%] lg:h-[55%] rounded-md shadow-2xl  inset-0 z-50 bg-zinc-100 p-2 border border-zinc-300`}
     >
       <button
         onClick={onClick}
@@ -25,8 +25,8 @@ export const OrderProduct = ({ product, display, onClick }: Params) => {
         X
       </button>
       <div className="flex flex-col items-center gap-4  shadow-zinc-300 shadow-2xl mt-2">
-        <img className="w-[230px]" src={product.image} alt={product.name} />
-        <div className=" w-full p-4">
+        <img className="w-[230px] border border-zinc-300 rounded-md" src={product.image} alt={product.name} />
+        <div className=" w-full p-4 border border-zinc-300 rounded-md">
           <h3 className=" font-bold tracking-wider">{product.name}</h3>
           <p>{product.name}</p>
           <span>{product.price.toFixed(2)}</span>

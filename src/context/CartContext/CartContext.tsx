@@ -14,9 +14,7 @@ interface CartContextProps {
   setCart: React.Dispatch<React.SetStateAction<Cart[]>>;
   addProductToCart: (product: Products) => void;
   removeFromCart: (product: Products) => void;
-  settingCart: () => void;
-  totalPorducts:number,
-  setTotalProducts: React.Dispatch<React.SetStateAction<number>>
+  sendCartToWhatsapp: () => void;
 }
 
 export const CartContext = createContext<CartContextProps>({
@@ -24,7 +22,6 @@ export const CartContext = createContext<CartContextProps>({
   setCart: () => {},
   addProductToCart: () => {},
   removeFromCart: () => {},
-  settingCart: () => {},
-  totalPorducts: 0,
-  setTotalProducts: () => {}
+  sendCartToWhatsapp: () => {},
+
 });

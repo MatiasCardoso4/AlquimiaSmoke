@@ -8,7 +8,6 @@ interface Params {
 
 export const CartProvider = ({ children }: Params) => {
   const [cart, setCart] = useState<Cart[]>([]);
-  const [totalPorducts, setTotalProducts] = useState(0);
 
   const addProductToCart = (product: Products) => {
     //increment the product quantity if it already exists in the cart
@@ -35,12 +34,21 @@ export const CartProvider = ({ children }: Params) => {
     }
   };
 
-  const settingCart = () => {
-    const newCart = [...cart];
-    const total = newCart.reduce((total, p) => {
-      return (total += p.quantity);
-    }, 0);
-    setTotalProducts(total);
+  const sendCartToWhatsapp = () => {
+    const phoneNumber =  import.meta.env.VITE_PHONE_NUMBER;
+  
+    const totalPrice = `*Total*: $${cart
+      .reduce((total, p) => {
+        return (total += p.price * p.quantity);
+      }, 0)
+      .toFixed(2)}`;
+    const cartString = cart.map((p) => `*- ${p.name}  x${p.quantity}*`).join("\n");
+    const message = `Hola, quiero pedir:\n${cartString}\n\n${totalPrice}`;
+
+    const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(whatsappLink, "_blank");
   };
 
   return (
@@ -50,9 +58,7 @@ export const CartProvider = ({ children }: Params) => {
         setCart,
         addProductToCart,
         removeFromCart,
-        settingCart,
-        totalPorducts,
-        setTotalProducts,
+        sendCartToWhatsapp,
       }}
     >
       {children}

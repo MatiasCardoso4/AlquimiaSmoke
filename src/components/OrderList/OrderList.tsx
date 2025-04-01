@@ -8,12 +8,12 @@ interface Params {
 }
 
 export const OrderList = ({ displayName, onClick }: Params) => {
-  const { cart, addProductToCart, removeFromCart } = useCart();
+  const { cart, addProductToCart, removeFromCart,sendCartToWhatsapp } = useCart();
   return (
     <div
       className={` ${
         displayName ? "absolute" : "hidden"
-      } w-full h-auto  right-0  top-[30%] lg:w-[50%] lg:top-[0] lg:right-[0] lg:h-max shadow-2xl z-10`}
+      } w-full h-auto  right-0  top-0  lg:w-[30%] lg:top-[0] lg:right-[0] lg:h-max shadow-2xl z-10`}
     >
       <div className="h-auto flex flex-col gap-4 bg-zinc-800 p-4 rounded-md ">
         <div className="flex w-full justify-between ">
@@ -53,7 +53,7 @@ export const OrderList = ({ displayName, onClick }: Params) => {
                 </li>
               ))
             ) : (
-              <img src={lupa} alt="imagen de una lupa" />
+              <img src={lupa} alt="imagen de una lupa" className="w-[33%] m-auto"/>
             )}
           </ul>
         </span>
@@ -64,7 +64,7 @@ export const OrderList = ({ displayName, onClick }: Params) => {
             }, 0)
             .toFixed(2)}`}</span>
         </div>
-        <div className="bg-green-400 p-2 rounded-xl text-center hover:bg-green-300 cursor-pointer">
+        <div className="bg-green-400 p-2 rounded-xl text-center hover:bg-green-300 cursor-pointer" onClick={sendCartToWhatsapp}>
           <Button label="Envianos tu pedido a Whatsapp" />
         </div>
       </div>
