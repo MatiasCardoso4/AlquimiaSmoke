@@ -10,7 +10,7 @@ export const Card = ({ product,onClick }: Params) => {
 
     <div
       onClick={onClick}
-      className=" w-full  flex flex-wrap   h-auto  justify-center m-auto items-center rounded-md p-4 bg-zinc-50  text-zinc-800 cursor-pointer border border-zinc-300"
+      className=" w-full h-[300px] flex flex-col justify-center m-auto items-center rounded-md p-4 bg-zinc-50  text-zinc-800 cursor-pointer border border-zinc-300 hover:-translate-y-2 duration-500 ease-in-out"
     >
       <div className="h-[100%] flex flex-col md:gap-2 justify-around">
         <h3 className="text-md md:text-xl lg:text-2xl font-bold tracking-wider font-[Lobster,sans-serif]">

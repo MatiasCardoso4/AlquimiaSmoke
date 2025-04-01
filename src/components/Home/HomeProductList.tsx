@@ -7,7 +7,7 @@ export const HomeProductsList = () => {
   const { product, randomProducts } = useProducts();
 
   return (
-    <section className="w-full  grid p-2  gap-4 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] lg:grid-cols-[repeat(auto-fit,minmax(400px,1fr))]  lg:w-[70%] lg:pb-8 ">
+    <section className="w-full  grid p-2  gap-6 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] lg:grid-cols-[repeat(auto-fit,minmax(400px,1fr))]  lg:w-[70%] lg:pb-8 ">
       {randomProducts.map((product) => (
         <Card
           key={product.id}

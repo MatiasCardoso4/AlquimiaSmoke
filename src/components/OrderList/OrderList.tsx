@@ -13,9 +13,9 @@ export const OrderList = ({ displayName, onClick }: Params) => {
     <div
       className={` ${
         displayName ? "absolute" : "hidden"
-      } w-full h-auto  right-0  top-0  lg:w-[30%] lg:top-[0] lg:right-[0] lg:h-max shadow-2xl z-10`}
+      } w-full h-auto  right-0  top-0  lg:w-[30%] lg:top-[33%] lg:right-[2%] lg:h-max shadow-2xl z-10 `}
     >
-      <div className="h-auto flex flex-col gap-4 bg-zinc-800 p-4 rounded-md ">
+      <div className="h-auto flex flex-col gap-4 bg-zinc-950 p-4 rounded-md ">
         <div className="flex w-full justify-between ">
           <h3 className="text-zinc-50 text-xl ">Tu Pedido</h3>
           <Button label="❌" onClick={onClick} />
@@ -64,7 +64,7 @@ export const OrderList = ({ displayName, onClick }: Params) => {
             }, 0)
             .toFixed(2)}`}</span>
         </div>
-        <div className="bg-green-400 p-2 rounded-xl text-center hover:bg-green-300 cursor-pointer" onClick={sendCartToWhatsapp}>
+        <div className="bg-green-400 p-2 rounded-xl text-center hover:bg-green-300 cursor-pointer" onClick={() => cart.length > 0 && sendCartToWhatsapp()}>
           <Button label="Envianos tu pedido a Whatsapp" />
         </div>
       </div>
